@@ -6,12 +6,16 @@ import org.apache.commons.io.IOUtils;
 
 public class TestSSHClient {
 
+	// Change the IP as per your local unix machine
 	public static String host = "130.3.192.111";
+	// user name for the unix machine
     public static String user = "cloud-user";
 
 	public static void main(String[] args) {
 
 		try{
+			// the ppk file should be in classpath 
+			// In case you are using a password to connect , you can use 'session.setPassword(passwd);' , in connect() method
 		    InputStream in = ClassLoader.class.getResourceAsStream("/centos.ppk");
 		    byte[] identity=null;
 			identity = IOUtils.toByteArray(in);
