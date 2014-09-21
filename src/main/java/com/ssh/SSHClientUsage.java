@@ -4,7 +4,7 @@ import java.io.InputStream;
 
 import org.apache.commons.io.IOUtils;
 
-public class TestSSHClient {
+public class SSHClientUsage {
 
 	// Change the IP as per your local unix machine
 	public static String host = "130.3.192.111";
