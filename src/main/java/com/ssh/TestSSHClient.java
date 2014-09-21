@@ -15,7 +15,7 @@ public class TestSSHClient {
 
 		try{
 			// the ppk file should be in classpath 
-			// In case you are using a password to connect , you can use 'session.setPassword(passwd);' , in connect() method
+			// In case you are using a password to connect , you can use 'session.setPassword(passwd)' , in connect() method
 		    InputStream in = ClassLoader.class.getResourceAsStream("/centos.ppk");
 		    byte[] identity=null;
 			identity = IOUtils.toByteArray(in);
