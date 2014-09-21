@@ -17,6 +17,15 @@
 		<groupId>commons-io</groupId>
 		<artifactId>commons-io</artifactId>
 		<version>2.4</version>
-	</dependency>    
+	</dependency>
+	
+	<!-- sshd neeed in Unit test -->    
+    <dependency>
+      <groupId>org.apache.sshd</groupId>
+      <artifactId>sshd-core</artifactId>
+      <version>0.11.0</version>
+    </dependency>
+
+
   </dependencies>
 </project>
